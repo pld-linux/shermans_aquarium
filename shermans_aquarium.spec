@@ -11,11 +11,11 @@ Version:	3.0.0
 Release:	0.%{_pre}.2
 License:	GPL v2 (except for images - see COPYING)
 Group:		X11/Window Managers/Tools
-Source0:	http://dl.sourceforge.net/sourceforge/aquariumapplet/%{name}-%{version}%{_pre}.tar.bz2
+Source0:	http://dl.sourceforge.net/aquariumapplet/%{name}-%{version}%{_pre}.tar.bz2
 # Source0-md5:	b98142c94418196eb822dcab9b234970
 Source1:	%{name}.desktop
 Patch0:		%{name}-3.0.0-opt.patch
-URL:		http://aquariumapplet.sourceforge.net
+URL:		http://aquariumapplet.sourceforge.net/
 %{?with_sdl:BuildRequires:	SDL-devel >= 1.2}
 BuildRequires:	autoconf
 %{?with_gai:BuildRequires:	gai-devel}
@@ -25,7 +25,7 @@ BuildRequires:	zlib-devel
 Obsoletes:	gnome-applet-aquarium 
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_xscreensavdir	/etc/X11/xscreensaver
+%define		_xscreensavdir	/etc/X11/xscreensaver
 
 %description
 This applet gives an aquarium with some randomly selected fishes. Some
