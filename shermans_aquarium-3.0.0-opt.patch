@@ -1,12 +1,11 @@
-diff -urN shermans_aquarium-3.0.0pre2.orig/shermans/Makefile.in shermans_aquarium-3.0.0pre2/shermans/Makefile.in
---- shermans_aquarium-3.0.0pre2.orig/shermans/Makefile.in	2004-01-10 09:51:30.000000000 +0100
-+++ shermans_aquarium-3.0.0pre2/shermans/Makefile.in	2004-01-11 10:25:55.000000000 +0100
+--- shermans_aquarium-3.0.0/shermans/Makefile.in.orig	2004-08-13 22:43:00.000000000 +0200
++++ shermans_aquarium-3.0.0/shermans/Makefile.in	2004-09-07 08:04:24.272777752 +0200
 @@ -11,7 +11,7 @@
  INSTALL_PATH=$(DESTDIR)@INSTALL_PATH@
  
  # Setting up the CFLAGS and LDFLAGS variables 
--CFLAGS += -Wall -O3 @GAI_CFLAGS@ @XMMS_CFLAGS@ @SDL_CFLAGS@ @GTK_CFLAGS@
-+CFLAGS += -Wall @CFLAGS@ @GAI_CFLAGS@ @XMMS_CFLAGS@ @SDL_CFLAGS@ @GTK_CFLAGS@
+-CFLAGS += -Wall -Wno-strict-aliasing -O3 -DIMAGE_PATH=\"@APPLET_IMAGE_PATH@\" @DGAI@ @GAI_CFLAGS@ @XMMS_CFLAGS@ @SDL_CFLAGS@ @GTK_CFLAGS@
++CFLAGS += -Wall -Wno-strict-aliasing -DIMAGE_PATH=\"@APPLET_IMAGE_PATH@\" @CFLAGS@ @DGAI@ @GAI_CFLAGS@ @XMMS_CFLAGS@ @SDL_CFLAGS@ @GTK_CFLAGS@
  LDFLAGS_GAI = $(LDFLAGS) @GAI_LIBS@ @XMMS_LIBS@ @SYSTEM_SPECIFIC_LIBS@
  LDFLAGS_SDL = $(LDFLAGS) @SDL_LIBS@ @SYSTEM_SPECIFIC_LIBS@ @GTK_LIBS@
  
