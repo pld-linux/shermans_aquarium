@@ -12,9 +12,11 @@ License:	GPL v2 (except for images - see COPYING)
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/aquariumapplet/%{name}-%{version}.tar.bz2
 # Source0-md5:	aed7c15259ea6f806ba620f946393cbf
+# Source0-size:	934288
 Source1:	%{name}.desktop
 Patch0:		%{name}-3.0.0-opt.patch
 Patch1:		%{name}-libdir.patch
+Patch2:		%{name}-typo.patch
 URL:		http://aquariumapplet.sourceforge.net/
 %{?with_sdl:BuildRequires:	SDL-devel >= 1.2}
 BuildRequires:	autoconf
@@ -45,6 +47,7 @@ scrollock.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 %{__autoconf}
