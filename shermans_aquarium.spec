@@ -7,7 +7,7 @@ Summary:	Applet with aquarium
 Summary(pl):	Aplet z akwarium
 Name:		shermans_aquarium
 Version:	3.0.0
-Release:	3
+Release:	4
 License:	GPL v2 (except for images - see COPYING)
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/aquariumapplet/%{name}-%{version}.tar.bz2
