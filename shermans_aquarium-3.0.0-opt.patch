@@ -1,0 +1,20 @@
+diff -urN shermans_aquarium-3.0.0pre1/shermans/Makefile.in shermans_aquarium-3.0.0pre1.opt-patch/shermans/Makefile.in
+--- shermans_aquarium-3.0.0pre1/shermans/Makefile.in	2003-11-16 20:00:39.000000000 +0100
++++ shermans_aquarium-3.0.0pre1.opt-patch/shermans/Makefile.in	2003-12-23 22:48:17.000000000 +0100
+@@ -11,7 +11,7 @@
+ INSTALL_PATH=$(DESTDIR)@INSTALL_PATH@
+ 
+ # Setting up the CFLAGS and LDFLAGS variables 
+-CFLAGS += -Wall -O3 @GAI_CFLAGS@ @XMMS_CFLAGS@
++CFLAGS += @CFLAGS@ -Wall @GAI_CFLAGS@ @XMMS_CFLAGS@
+ LDFLAGS += @GAI_LIBS@ @XMMS_LIBS@ @SYSTEM_SPECIFIC_LIBS@
+ 
+ OBJS = @APPLET_EXTRA_OBJS@ @XMMS_OBJ@ @STATUS@
+@@ -20,7 +20,6 @@
+ 
+ shermans_applet: $(OBJS)
+ 	$(CC) -o shermans_applet $(OBJS) $(LDFLAGS)
+-	strip shermans_applet
+ 
+ install: @INSTALL_GNOME@ @INSTALL_IMAGES@
+ 	mkdir -p $(INSTALL_PATH)/bin
