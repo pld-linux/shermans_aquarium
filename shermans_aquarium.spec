@@ -12,7 +12,7 @@ Release:	0.%{_pre}.2
 License:	GPL v2 (except for images - see COPYING)
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/sourceforge/aquariumapplet/%{name}-%{version}%{_pre}.tar.bz2
-# Source0-md5:	e9064bbc8a210c458bb8708dbbdea281
+# Source0-md5:	b98142c94418196eb822dcab9b234970
 Source1:	%{name}.desktop
 Patch0:		%{name}-3.0.0-opt.patch
 URL:		http://aquariumapplet.sourceforge.net
