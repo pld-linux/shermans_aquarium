@@ -7,12 +7,11 @@ Summary:	Applet with aquarium
 Summary(pl):	Aplet z akwarium
 Name:		shermans_aquarium
 Version:	3.0.0
-%define _pre 	pre2
-Release:	0.%{_pre}.2
+Release:	1
 License:	GPL v2 (except for images - see COPYING)
 Group:		X11/Window Managers/Tools
-Source0:	http://dl.sourceforge.net/aquariumapplet/%{name}-%{version}%{_pre}.tar.bz2
-# Source0-md5:	b98142c94418196eb822dcab9b234970
+Source0:	http://dl.sourceforge.net/aquariumapplet/%{name}-%{version}.tar.bz2
+# Source0-md5:	aed7c15259ea6f806ba620f946393cbf
 Source1:	%{name}.desktop
 Patch0:		%{name}-3.0.0-opt.patch
 URL:		http://aquariumapplet.sourceforge.net/
@@ -42,7 +41,7 @@ wy¶wietlania czasu i pokazywania statusu klawiszy numlock, capslock i
 scrollock.
 
 %prep
-%setup -q -n %{name}-%{version}%{_pre}
+%setup -q
 %patch0 -p1
 
 %build
