@@ -6,5 +6,6 @@ Exec=shermans_aquarium
 Icon=shermans_aquarium-icon.xpm
 Terminal=false
 Type=Application
+Categories=Applet;
 Encoding=UTF-8
 # vi: encoding=utf-8
