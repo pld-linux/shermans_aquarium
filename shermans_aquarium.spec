@@ -7,7 +7,7 @@ Summary:	Applet with aquarium
 Summary(pl):	Aplet z akwarium
 Name:		shermans_aquarium
 Version:	3.0.0
-Release:	1
+Release:	2
 License:	GPL v2 (except for images - see COPYING)
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/aquariumapplet/%{name}-%{version}.tar.bz2
@@ -56,12 +56,12 @@ scrollock.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/DockApplets,%{_xscreensavdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir}/docklets,%{_xscreensavdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 mv -f $RPM_BUILD_ROOT%{_datadir}/control-center/screensavers/* \
 	$RPM_BUILD_ROOT%{_xscreensavdir}
 
@@ -72,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README README.gai TODO XSCREENSAVER
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/DockApplets/*
+%{_desktopdir}/docklets/*
 %{_libdir}/bonobo/servers/*.server
 %{_pixmapsdir}/*
 %{_xscreensavdir}/*
