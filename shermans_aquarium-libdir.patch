@@ -1,0 +1,21 @@
+--- shermans_aquarium-3.0.0/shermans/Makefile.in~	2004-10-20 05:10:19.050405856 +0000
++++ shermans_aquarium-3.0.0/shermans/Makefile.in	2004-10-20 05:14:16.304337776 +0000
+@@ -6,6 +6,7 @@
+ CC = @CC@
+ 
+ PREFIX = @prefix@
++LIBDIR = @libdir@
+ GNOMEDIR = @GNOMEDIR@
+ 
+ INSTALL_PATH=$(DESTDIR)@INSTALL_PATH@
+@@ -44,8 +45,8 @@
+ 	install -m 644 ../shermans.xml $(INSTALL_PATH)/share/control-center/screensavers
+ 
+ install-gnome: 
+-	mkdir -p $(INSTALL_PATH)/lib/bonobo/servers/
+-	install -m 644 ../GNOME_@APPLET_NAME@Applet.server $(INSTALL_PATH)/lib/bonobo/servers/GNOME_@APPLET_NAME@Applet.server
++	mkdir -p $(DESTDIR)$(LIBDIR)/bonobo/servers/
++	install -m 644 ../GNOME_@APPLET_NAME@Applet.server $(DESTDIR)$(LIBDIR)/bonobo/servers/GNOME_@APPLET_NAME@Applet.server
+ 
+ 
+ install-images:
