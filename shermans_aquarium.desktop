@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Shermans_aquarium
+Comment=Applet with aquarium
+Comment[pl]=Aplet z akwarium
+Exec=shermans_aquarium
+Icon=shermans_aquarium-icon.xpm
+Terminal=false
+Type=Application
+Encoding=UTF-8
