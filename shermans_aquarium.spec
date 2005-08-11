@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	sdl	# without Screensaver support
-%bcond_without  gai	# without applet support
+%bcond_without	gai	# without applet support
 #
 Summary:	Applet with aquarium
 Summary(pl):	Aplet z akwarium
