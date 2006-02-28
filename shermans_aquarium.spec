@@ -22,7 +22,7 @@ BuildRequires:	autoconf
 BuildRequires:	pkgconfig
 BuildRequires:	zlib-devel
 %{?with_sdl:Requires:	xscreensaver}
-Obsoletes:	gnome-applet-aquarium 
+Obsoletes:	gnome-applet-aquarium
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_xscreensavdir	/etc/X11/xscreensaver
@@ -54,7 +54,7 @@ scrollock.
 
 %{__make} \
 	OPT="%{rpmcflags}"
-	
+
 
 %install
 rm -rf $RPM_BUILD_ROOT
