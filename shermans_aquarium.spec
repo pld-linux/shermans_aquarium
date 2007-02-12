@@ -4,7 +4,7 @@
 %bcond_without	gai	# without applet support
 #
 Summary:	Applet with aquarium
-Summary(pl.UTF-8):   Aplet z akwarium
+Summary(pl.UTF-8):	Aplet z akwarium
 Name:		shermans_aquarium
 Version:	3.0.1
 Release:	1
