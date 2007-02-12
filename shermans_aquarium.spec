@@ -4,7 +4,7 @@
 %bcond_without	gai	# without applet support
 #
 Summary:	Applet with aquarium
-Summary(pl):	Aplet z akwarium
+Summary(pl.UTF-8):   Aplet z akwarium
 Name:		shermans_aquarium
 Version:	3.0.1
 Release:	1
@@ -34,11 +34,11 @@ right side shows the current CPU load. It can also be configured to
 display the time and show the status of numlock, capslock and
 scrollock.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplet akwarium z losowo wybranymi rybami. Innymi funkcjami programu
-jakie oferuje jest to, ¿e skala temperatury na prawo pokazuje aktualne
-obci±¿enie procesora. Aplet ten mo¿e te¿ byæ skonfigurowany do
-wy¶wietlania czasu i pokazywania statusu klawiszy numlock, capslock i
+jakie oferuje jest to, Å¼e skala temperatury na prawo pokazuje aktualne
+obciÄ…Å¼enie procesora. Aplet ten moÅ¼e teÅ¼ byÄ‡ skonfigurowany do
+wyÅ›wietlania czasu i pokazywania statusu klawiszy numlock, capslock i
 scrollock.
 
 %prep
